@@ -1,4 +1,4 @@
-const tareaDAO = require('../dao/tareaDAO');
+const tareaDAO = require('../dao/TareaDAO');
 
 exports.getById = (idTarea) => {
     return tareaDAO.getbyId(idTarea);
