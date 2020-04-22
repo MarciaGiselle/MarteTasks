@@ -9,12 +9,12 @@ conectarDatabase();
 //app.use(cors());
 app.use(
     cors({
-      origin: 'https://peaceful-jones-8f3af5.netlify.app/'
+      origin: '*'
     })
   );
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", 'https://peaceful-jones-8f3af5.netlify.app/');
+    res.header("Access-Control-Allow-Origin", '*');
     res.header(
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept"
