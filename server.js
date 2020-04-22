@@ -20,6 +20,12 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/materia', require('./routes/materia'));
 app.use('/api/tarea', require('./routes/tarea'));
 
+
+//definir la pagina principal
+app.get('/', (request, response)=> {
+    response.send('Hola')
+})
+
 //iniciar servidor
 app.listen(port, '0.0.0.0',() => {
     console.log(`El servidor esta funcionando en el puerto ${port}`)
